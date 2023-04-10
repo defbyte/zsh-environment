@@ -1,0 +1,54 @@
+# Project files
+*.tmproj
+*.esproj
+*.vscode
+*~
+node_modules
+vim/.netrwhist
+
+# Compiled sources
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.rbc
+*.sassc
+*.sw[nop]
+**.orig
+*.py[co]
+.sass-cache
+capybara-*.html
+
+# Packages: it's better to unpack these files and commit the raw source
+# because git has its own built-in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases
+*.dump
+*.log
+*.sqlite
+*.db
+
+# OS generated files
+.DS_Store?
+*.DS_Store
+ehthumbs.db
+Thumbs.db
+*Thumbs.db
+
+# Included files
+# Specifically expect these files in projects
+!.gitignore
+!.ruby-version
+!.slugignore
+!*.gitkeep
+!*.keep
