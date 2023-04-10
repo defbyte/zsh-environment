@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo -e "Installing Oh My Zsh and mounting envrionment...\n"
+echo "Installing Oh My Zsh and mounting envrionment...\n"
 
 # Where are we?
 project_dir=$(pwd)
@@ -24,4 +24,14 @@ ln -sf "$project_dir/dotfiles/gitconfig" "$HOME/.gitconfig"
 ln -sf "$project_dir/dotfiles/gitignore" "$HOME/.gitignore"
 ln -sf "$project_dir/dotfiles/zshrc" "$HOME/.zshrc"
 
-echo -e "...complete\n"
+# Configure git user and email
+echo "Configure git user\n"
+echo "user.name: "
+read git_user_name
+echo "user.email: "
+read git_user_email
+
+git config --global user.name "$git_user_name"
+git config --global user.email "$git_user_email"
+
+echo "...complete\n"
