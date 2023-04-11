@@ -31,7 +31,10 @@ read git_user_name
 echo "user.email: "
 read git_user_email
 
-git config --global user.name "$git_user_name"
-git config --global user.email "$git_user_email"
+cat > "$HOME/.gituser" <<EOF
+[user]
+	name = "$git_user_name"
+	email = "$git_user_email"
+EOF
 
 echo "...complete\n"
